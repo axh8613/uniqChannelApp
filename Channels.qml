@@ -18,8 +18,10 @@ Rectangle {
     }
 
     function loadVideo() {
-        stack.items[2].videourl = listModel.get(list.currentIndex).itemUrl;
-        stack.push(stack.items[2], StackView.PushTransition);
+        //stack.items[2].videourl = listModel.get(list.currentIndex).itemUrl;
+        //stack.push(stack.items[2], StackView.PushTransition);
+        myPlayer.start(listModel.get(list.currentIndex).itemUrl)
+       // Player.start(listModel.get(list.currentIndex).itemUrl)
     }
     RowLayout
     {
